@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+
+
+}
+body {
+    background-color: black;
+}
+
+header {
+    background-color: #414141;
+    background-image: url('milky-way.jpg');
+    background-size: cover;
+    padding: 15px;
+    text-align: center;
+    color:white;
+    font-family: 'Brush Script MT', cursive;
+    font-size: xx-large;
+}
+
+section {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+
+}
+#kontakt{
+    text-align: center;
+}
+
+form input {
+    margin: 10px;
+    width: 20%;
+}
+
+form textarea {
+    margin: 10px;
+    width: 20%;
+}
+
+#kontakt-button{
+     padding: 10px;
+     background-color: #70C4EE;
+     color: #32586B;
+     text-align: center;
+     cursor: pointer;
+}
+
+
+nav {
+    background-color: #52636B;
+
+    flex: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #70C4EE;
+    color: #32586B;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav li:hover {
+    background-color: #B6D9EB;
+    color: #32586B;
+
+}
+
+.main {
+    display: none;
+}
+
+
+
+article {
+    background-color: #B6D9EB;
+    padding: 50px;
+    flex: 4;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+}
